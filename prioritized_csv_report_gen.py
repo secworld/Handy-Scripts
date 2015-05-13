@@ -54,7 +54,7 @@ print ("Please Wait.. Generating Report ....")
 
 # --------Please change the source and destination path accordingly-----------
 
-src_file = "/home/user/Desktop/Indusind/Scripts/csv_report/Unfixed_Vulneranilities.csv"
+src_file = "/home/user/Desktop/Indusind/Scripts/xml_report/Unfixed_Vulneranilities.csv"
 dst_file = "/home/user/Desktop/"#Please change accorgingly
 shutil.copy(src_file, dst_file)
 print ("The file can be found on your Desktop")
