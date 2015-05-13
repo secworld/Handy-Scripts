@@ -6,7 +6,6 @@
 from collections import OrderedDict
 import shutil
 import csv
-import time
  
 def csv_func(file_obj):
     
@@ -45,17 +44,13 @@ def csv_func(file_obj):
     
  
 if __name__ == "__main__":
-	print "\n\n"
-	input_path = raw_input("Please Enter the path of the input report  :  ")
-	with open("%s" %input_path) as file_obj:
-		csv_func(file_obj)
+    with open("/home/user/Desktop/NW_VA_Report.csv") as file_obj: # Please select the respective report name --> input file
+        csv_func(file_obj)
 print "\n\n"
 print ("Please Wait.. Generating Report ....")
 
 # --------Please change the source and destination path accordingly-----------
 
-src_file = "/home/user/Desktop/Indusind/Scripts/xml_report/Unfixed_Vulneranilities.csv"
-dst_file = "/home/user/Desktop/"#Please change accorgingly
-shutil.copy(src_file, dst_file)
-print ("The file can be found on your Desktop")
-time.sleep(5)
+#src_file = "/home/user/Desktop/Indusind/Scripts/xml_report/Unfixed_Vulneranilities.csv"
+#dst_file = "/home/user/Desktop/"
+#shutil.copy(src_file, dst_file)
