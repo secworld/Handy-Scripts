@@ -8,6 +8,10 @@ done < "$1"
 
 <<"COMMENT"
 
+SAVE THE BELOW IDs IN A FILE AND RUN THE SCRIPT WITH THE PATH_OF_THIS_FILE AS THE ARGUMENT 
+
+eg: ./IDA_Plugins_Download.sh test.txt
+
 2380
 2381
 2382
