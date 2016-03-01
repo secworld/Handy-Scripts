@@ -1,5 +1,5 @@
-$servers = ìNew-IndusDirect-Web-W2K8",îCTFS-Meridian",îCFDINDUSLOAN","HHTFTP","PROGENIE"
+$Servers = ‚Äú<COMPUTER NAME-1>",‚Äù<COMPUTER NAME-2>",‚Äù<COMPUTER NAME-3>","<COMPUTER NAME-4>","<COMPUTER NAME-5>"
 
-$credential = Get-Credential -Credential iblvaadmin
+$credential = Get-Credential -Credential Administrator
 
-Invoke-Command -ComputerName $servers -Credential $credential -ScriptBlock {Remove-Item -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system\LocalAccountTokenFilterPolicy}
+Invoke-Command -ComputerName $Servers -Credential $credential -ScriptBlock {Remove-Item -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system\LocalAccountTokenFilterPolicy}
