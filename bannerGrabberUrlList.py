@@ -12,7 +12,7 @@ with open('<Path To IP List File>', 'r') as f:
                     c.request ("GET", "/")
                     r2 = c.getresponse()
                     print r2.status
-                    r1 = r2.getheaders()
+                    r1 = dict(r2.getheaders())
                     WebServer = r2.getheader("server")
                     ContentType = r2.getheader("content-type")
                     d2 = r2.read()
@@ -29,7 +29,7 @@ with open('<Path To IP List File>', 'r') as f:
                     c.request ("GET", "/")
                     r2 = c.getresponse()
                     print r2.status
-                    r1 = r2.getheaders()
+                    r1 = dict(r2.getheaders())
                     WebServer = r2.getheader("server")
                     ContentType = r2.getheader("content-type")
                     d2 = r2.read()
