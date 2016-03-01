@@ -1,6 +1,6 @@
 import sys,socket,httplib
 
-with open('C:\Users\iblfm1180\Desktop\urllist.txt', 'r') as f:
+with open('<Path To IP List File>', 'r') as f:
     for ip in f:
             host = ip.rstrip('\n')
             httpurl = str(host)+str(":80")
@@ -21,7 +21,7 @@ with open('C:\Users\iblfm1180\Desktop\urllist.txt', 'r') as f:
                     print "\n\nWebServer Name :",WebServer
                     print "Content Type :",ContentType
                     print "\n\nResponse is : "
-                    #print d2
+                    print d2
                     print "\n\n"
                 except:
                     print httpsurl
@@ -38,7 +38,7 @@ with open('C:\Users\iblfm1180\Desktop\urllist.txt', 'r') as f:
                     print "\n\nWebServer Name :",WebServer
                     print "Content Type :",ContentType
                     print "\n\nResponse is : "
-                    #print d2
+                    print d2
                     print "\n\n"
             except:
                 print "Connection Timed out !!!\nTrying next ..."
