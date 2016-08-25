@@ -24,6 +24,7 @@ process{
 	$ips = $DNSEntity.AddressList | %{$_.IPAddressToString}
 	}
 	catch
+	
 	{
 		$rst = "" |  select Name,IP,Domain,Ping,WSMAN,CredSSP,RemoteReg,RPC,RDP
 		$rst.name = $name
